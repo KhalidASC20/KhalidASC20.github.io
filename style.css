@@ -18,9 +18,25 @@ header {
   padding: 2rem;
 }
 
-.project {
+.projects {
   width: 300px;
   margin: 1rem;
+}
+
+.projects_div {
+  display: flex;
+}
+
+#projects_button {
+  background-color: black;
+  color: white;
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  text-decoration: none;
+  width: 100px;
+  text-align: center;
+  border-radius: 10px;
 }
 
 .project img {
@@ -36,4 +52,100 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
+}
+
+img {
+  display: block;
+  max-width: 180px;
+  max-height: 180px;
+  width: auto;
+  height: auto;
+}
+
+.projects_thumbnail {
+  border-radius: 20%;
+  margin-left: 10%;
+  padding: 2rem;
+}
+
+.game_thumbnail {
+  border: 5px solid #555;
+  border-radius: 20%;
+  margin-left: 10%;
+  padding: 2rem;
+}
+
+.aboutme_button_div {
+  display: flex;
+  justify-content: center;
+}
+
+.aboutme_div {
+  flex-direction: column;
+}
+
+.aboutme_div h2 {
+  text-align: center;
+}
+
+#aboutme_p {
+  /*border: 5px black solid;*/
+  margin-left: 20%;
+  margin-right: 20%;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+
+#aboutme_button {
+  background-color: black;
+  color: white;
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  text-decoration: none;
+  width: 100px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.home_button {
+  color: white;
+  text-decoration: none;
+}
+
+#projects_header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#game_header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game_div {
+  display: flex;
+}
+
+#game_button {
+  background-color: black;
+  color: white;
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  text-decoration: none;
+  text-align: center;
+  width: 100px;
+  border-radius: 10px;
+}
+
+.description_div {
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
 }
