@@ -4,6 +4,37 @@ body {
   padding: 0;
 }
 
+/* #showcase {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+} */
+
+.pause_btn_div{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+  
+}
+
 header {
   background-color: #333;
   color: white;
@@ -30,13 +61,20 @@ header {
 #projects_button {
   background-color: black;
   color: white;
-  display: block;
-  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 45px;
   line-height: 40px;
   text-decoration: none;
-  width: 100px;
+  width: 110px;
   text-align: center;
   border-radius: 10px;
+}
+
+#projects_button:hover {
+  background: #ddd;
+  color: black;
 }
 
 .project img {
@@ -44,12 +82,18 @@ header {
   height: auto;
 }
 
+#master_div {
+  min-height: 100vh;
+  padding-bottom: 3rem;
+  box-sizing: border-box;
+}
+
 footer {
   background-color: #333;
   color: white;
   text-align: center;
   padding: 1rem;
-  position: fixed;
+  position: relative;
   bottom: 0;
   width: 100%;
 }
@@ -110,6 +154,11 @@ img {
   border-radius: 10px;
 }
 
+#aboutme_button:hover{
+  background: #ddd;
+  color: black;
+}
+
 .home_button {
   color: white;
   text-decoration: none;
@@ -134,13 +183,20 @@ img {
 #game_button {
   background-color: black;
   color: white;
-  display: block;
-  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 45px;
   line-height: 40px;
   text-decoration: none;
   text-align: center;
-  width: 100px;
+  width: 110px;
   border-radius: 10px;
+}
+
+#game_button:hover{
+  background: #ddd;
+  color: black;
 }
 
 .description_div {
