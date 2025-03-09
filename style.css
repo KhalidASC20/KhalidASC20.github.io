@@ -1,17 +1,41 @@
 body {
   font-family: Arial, sans-serif;
+  background-color: #000;
   margin: 0;
   padding: 0;
+  background: url('images/arcade_bg.png') no-repeat center center/cover;
+}
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 3.6s ease-out, transform 1.6s ease-out;
 }
 
-/* #showcase {
-  position: fixed;
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+.showcase_div {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url('images/showcase.jpg') no-repeat center center/cover;
+  color: white;
+  text-align: center;
+}
+#showcase {
+  opacity: 1;
+  top: 0;
   right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
+  left: 10%;
+  height: 100%;
+  object-fit: cover;
   background: rgba(0, 0, 0, 0.5);
-} */
+} 
 
 .pause_btn_div{
   display: flex;
@@ -36,7 +60,7 @@ body {
 }
 
 header {
-  background-color: #333;
+  background-color: black;
   color: white;
   text-align: center;
   padding: 1rem;
@@ -89,7 +113,7 @@ header {
 }
 
 footer {
-  background-color: #333;
+  background-color: black;
   color: white;
   text-align: center;
   padding: 1rem;

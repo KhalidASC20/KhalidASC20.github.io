@@ -6,22 +6,32 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
     <title>portfolio-homescreen</title>
   </head>
+  <div class="fade-in-section">
+  <header>
+    <h1>Khalid Stewart - Portfolio</h1>
+  </header>
+ </div>
+  <br /><br /><br /><br/>
   <body>
-    <header>
-      <h1>Khalid Stewart - Portfolio</h1>
-    </header>
-    <br /><br />
     <div id="master_div">
+      <div class="showcase_div">
       <video autoplay loop id="showcase">
-        <source src="./vids/game_showcase(v1).mp4" type="video/mp4">
+        <source src="./vids/0815.mp4" type="video/mp4">
       </video>
+      </div>
+      <br/><br/><br/>
+      <div class="fade-in-section">
       <div class="pause_btn_div">
         <button id="myBtn" onclick="myFunction()">Play</button>
       </div>
-      <br/><br/><br/>        
+    </div>
+      <br/><br/><br/>
+      <div class="fade-in-section">        
       <div class="aboutme_button_div">
         <a id="aboutme_button" href="aboutme.html">about me</a>
       </div>
+    </div>
+    <div class="fade-in-section">
       <section id="projects-container">
         <!-- Add your projects here -->
         <!-- Project button -->
@@ -32,14 +42,17 @@
         <div class="game_div">
           <a id="game_button" href="games.html">View Games</a>
         </div>
+    </div>
         <!-- Add more projects as needed -->
       </section>
     </div>
 
-    <footer>
-      <p>&copy; 2024 Khalid Stewart</p>
-    </footer>
 
-    <script src="main.js"></script>
+
+    
   </body>
+  <footer>
+    <p>&copy; 2024 Khalid Stewart</p>
+  </footer>
+  <script src="main.js"></script>
 </html>
