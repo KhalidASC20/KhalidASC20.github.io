@@ -6,13 +6,39 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
     <title>game-homescreen</title>
   </head>
-  <body>
-    <header>
-      <h1>
-        <a class="home_button" href="index.html">Khalid Stewart</a>- Portfolio
-      </h1>
-    </header>
+  <body class="game_body">
+    <div class="page-wrapper">
+    <div class="fade-in-section">
+      <header>
+        <h1>
+          <a class="home_button" href="index.html">Khalid Stewart</a>- Portfolio
+        </h1>
+        <nav>
+          <a href="aboutme.html">About Me</a>
+          <a href="projects.html">Projects</a>
+          <a href="games.html">Games</a>
+        </nav>
+      </header>
+    </div>
+    <main id="master_div">
+     <div id="master_div">
+      <div class ="arcade_bg">
+       <div class="showcase_div">  
+          <video id="showcase">
+            <source src="./vids/0815.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <br/><br/><br/>
+      <div class="fade-in-section">
+      <div class="pause_btn_div">
+        <button id="myBtn" onclick="myFunction()">Play</button>
+      </div>
+    </div>
+
     <br /><br />
+
+    
     <div id="master_div">
       <section id="projects-container">
         <!-- Add your projects here -->
@@ -149,11 +175,13 @@
         <!-- Add more projects as needed -->
       </section>
     </div>
+  </main>
 
     <footer>
       <p>&copy; 2024 Khalid Stewart</p>
     </footer>
 
     <script src="main.js"></script>
+  </div>
   </body>
 </html>

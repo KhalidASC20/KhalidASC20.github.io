@@ -6,12 +6,37 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
     <title>projects-homescreen</title>
   </head>
+
   <body>
-    <header>
+    <div class="page-wrapper">
+    <div class="fade-in-section">
+      <header>
       <h1>
         <a class="home_button" href="index.html">Khalid Stewart</a>- Portfolio
       </h1>
-    </header>
+      <nav>
+        <a href="aboutme.html">About Me</a>
+        <a href="projects.html">Projects</a>
+        <a href="games.html">Games</a>
+      </nav>
+      </header>
+        <div id="project_master_div">
+        <div id="Link_p">
+          <p> My senior project presentation for "LINK" the LA wildire resources aid website.</p>
+        </div>
+       <div class="project_showcase_div">  
+          <video  id="project_showcase">
+            <source src="./vids/LINK_Presi.mov" type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <div class="fade-in-section">
+        <div class="pause_btn_div">
+          <button id="myBtn" onclick="myFunction()">Play</button>
+        </div>
+      </div>
+
+ </div>
     <br /><br />
     <div id="master_div">
       <section id="projects-container">
@@ -37,7 +62,7 @@
               in development.
             </p>
             <a
-              href="https://khalidasc20.github.io/SeniorProject-2/"
+              href="https://link-two-tawny.vercel.app/"
               target="_blank"
               >View Project</a
             >
@@ -107,5 +132,6 @@
     </footer>
 
     <script src="main.js"></script>
+    </div>
   </body>
 </html>

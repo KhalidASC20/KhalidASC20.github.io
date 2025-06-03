@@ -1,9 +1,23 @@
 body {
+  height:100;
+  margin: 0%;
+  background-color: #121212;
+  color: #f5f5f5;
+  font-family: 'Segoe UI', sans-serif;
+}
+.game_body {
   font-family: Arial, sans-serif;
   background-color: #000;
   margin: 0;
   padding: 0;
-  background: url('images/arcade_bg.png') no-repeat center center/cover;
+  background: url('images/arcade_floorbg.jpg') no-repeat center center/cover;
+  background-attachment: fixed;
+}
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 .fade-in-section {
   opacity: 0;
@@ -11,9 +25,49 @@ body {
   transition: opacity 3.6s ease-out, transform 1.6s ease-out;
 }
 
+
 .fade-in-section.is-visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+#landingpage_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 1rem 2rem; /* top, sides, bottom */
+  margin-top: 4rem; /* space below navbar */
+  color: white;
+  text-align: center;
+  flex-direction: column;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+ .landingpage_p{
+  margin-left: 20%;
+  margin-right: 20%;
+  background-color: black;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+ }
+ 
+.project_showcase_div {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  min-height: 60vh; /* allows it to grow if content increases */
+  padding: 1rem 1rem; /* consistent top/bottom and side spacing */
+  padding-bottom: 0.5rem;
+  margin: 0;
+  color: white;
+  text-align: center;
+  box-sizing: border-box;
+
 }
 
 
@@ -22,19 +76,54 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  background: url('images/showcase.jpg') no-repeat center center/cover;
+  flex-direction: column;
+
+  min-height: 80vh; /* allows it to grow if content increases */
+  padding: 1rem 1rem; /* consistent top/bottom and side spacing */
+  
   color: white;
   text-align: center;
+  box-sizing: border-box;
+
 }
-#showcase {
-  opacity: 1;
-  top: 0;
-  right: 0;
-  left: 10%;
-  height: 100%;
+.arcade_bg {
+  /* flex: 1;
+  width: 100%;
+  height: auto; */
+  width: 80vw;
+  height: 80vh;
+  background: url('images/arcade_bg.png') no-repeat center center;
+  background-size: contain;
+  margin: 0 auto;
+  z-index: 1;
+}
+#project_showcase {
+  position: absolute;
+  top: 43%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* width:38vw;
+  height: 48vh; */
+  width: 100%;
+  max-width: 599px;
+  aspect-ratio: 16/9;
   object-fit: cover;
   background: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+} 
+#showcase {
+  position: absolute;
+  top: 43%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* width:38vw;
+  height: 48vh; */
+  width: 100%;
+  max-width: 599px;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 2;
 } 
 
 .pause_btn_div{
@@ -44,9 +133,11 @@ body {
 }
 
 #myBtn {
-  width: 200px;
-  font-size: 18px;
-  padding: 10px;
+  width: 15%;
+  max-width: 200px;
+  font-size: 1.2rem;
+  padding: .8rem;
+  border-radius: 1rem;
   border: none;
   background: #000;
   color: #fff;
@@ -66,6 +157,21 @@ header {
   padding: 1rem;
 }
 
+header nav {
+  margin-top: 1rem;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-size: 1.2rem;
+}
+
+header nav a:hover {
+  color: #ddd;
+}
+
 #projects-container {
   display: flex;
   flex-wrap: wrap;
@@ -74,12 +180,33 @@ header {
 }
 
 .projects {
-  width: 300px;
+  width: 20%;
+  max-width: 300px;
   margin: 1rem;
 }
 
 .projects_div {
   display: flex;
+}
+
+#Link_p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 1rem 2rem; /* top, sides, bottom */
+  margin-top: 4rem; /* space below navbar */
+  color: white;
+  text-align: center;
+  flex-direction: column;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+
+
+
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
 }
 
 #projects_button {
@@ -88,12 +215,15 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 45px;
-  line-height: 40px;
+  height: 100%;
+  line-height: 100%;
   text-decoration: none;
-  width: 110px;
+  width: 10vw;
+  max-width: 150px;
   text-align: center;
-  border-radius: 10px;
+  border-radius: 0.6rem;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
 }
 
 #projects_button:hover {
@@ -108,7 +238,7 @@ header {
 
 #master_div {
   min-height: 100vh;
-  padding-bottom: 3rem;
+  padding-bottom: 1rem;
   box-sizing: border-box;
 }
 
@@ -117,9 +247,9 @@ footer {
   color: white;
   text-align: center;
   padding: 1rem;
-  position: relative;
+  /* position: relative;
   bottom: 0;
-  width: 100%;
+  width: 100%; */
 }
 
 img {
@@ -158,12 +288,23 @@ img {
 
 #aboutme_p {
   /*border: 5px black solid;*/
-  margin-left: 20%;
-  margin-right: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 1rem 2rem; /* top, sides, bottom */
+  margin-top: 4rem; /* space below navbar */
+  color: black;
+  text-align: center;
+  flex-direction: column;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+
+
   background-color: #f8f8f8;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 2rem;
+
 }
 
 #aboutme_button {
@@ -225,6 +366,7 @@ img {
 
 .description_div {
   background-color: #f8f8f8;
+  color: black;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 2rem;
